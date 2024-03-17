@@ -7,16 +7,30 @@
     <title>LEIA ESSE BILHETE!!!</title>
     <link rel="stylesheet" href="assets/styles.css">
     <link rel="icon" href="./assets/coracao.png">
-    <script src="assets/script.js"></script>
 </head>
 
-<body>
+<body onload="tocarMusica('audio')">
+
+    <audio id="backgroundMusic">
+        <source src="assets/George Michael - Careless Whisper (Official Video).mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
     <div class="container">
         <div id="text"></div>
         <div id="envolpe_img"></div>
         <button id="button" class="coracao">&#10084;</button>
         <div id="dialog"></div>
     </div>
+    <script src="assets/script.js"></script>
+
+    <script>
+        function tocarMusica(nomeArquivo) {
+            const audio = document.getElementById("backgroundMusic");
+            audio.src = `assets/${nomeArquivo}.mp3`;
+            audio.play();
+        }
+    </script>
 </body>
 
 </html>

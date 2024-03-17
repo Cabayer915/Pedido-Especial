@@ -18,8 +18,10 @@ document.addEventListener("DOMContentLoaded", function () {
         dialog.innerHTML = `<div class='dialog'>
             <h2>Só pode dizer sim!!!</h2>
             <p>Quer sair comigo? 🌹</p>
+            <div class="buttons">
             <button id='yes'>Sim</button>
             <button id='no'>Não</button>
+            </div>
             </div>`;
         let dialogBox = document.querySelector(".dialog");
         dialogBox.style.display = "block";

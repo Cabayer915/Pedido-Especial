@@ -22,7 +22,7 @@ body {
 #button {
     background-color: transparent;
     border: none;
-    
+    cursor: pointer;
 }
 
 .dialog {
@@ -34,6 +34,7 @@ body {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
+    box-shadow:0px 2px 2px rgba(0, 0, 0.8, 0.8);
 }
 
 .coracao{
@@ -63,4 +64,20 @@ body {
 
 #no {
     cursor: pointer;
+}
+
+.dialog button {
+    width: 4rem;
+    border: none;
+    box-shadow:0px 2px 2px rgba(0, 0, 0.8, 0.8);
+    height: auto;
+    border-radius: 16px;
+    background-color: #FF90BC;
+    padding: 0.5rem;
+}
+
+.buttons {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
 }
